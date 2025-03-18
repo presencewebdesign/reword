@@ -1,0 +1,52 @@
+$font-family-main: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+$font-weight-extra-bold: 900;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$font-weight-thin: 300;
+$font-weight-extra-thin: 100;
+
+$font-size-xxl: 3.2rem;
+$font-size-xl: 2.4rem;
+$font-size-lg: 1.8rem;
+$font-size-md: 1.4rem;
+$font-size-sm: 1.2rem;
+$font-size-xs: 0.8rem;
+
+$line-height-xl: 2.4;
+$line-height-lg: 1.8;
+$line-height-md: 1.5;
+$line-height-sm: 1.1;
+$line-height-xs: 0.8;
+
+:root {
+  --font-family-main: #{$font-family-main};
+
+  // Font Weights
+  --font-weight-extra-bold: #{$font-weight-extra-bold};
+  --font-weight-bold: #{$font-weight-bold};
+  --font-weight-normal: #{$font-weight-normal};
+  --font-weight-thin: #{$font-weight-thin};
+  --font-weight-extra-thin: #{$font-weight-extra-thin};
+
+  // Font Sizes
+  --font-size-xxl: #{$font-size-xxl};
+  --font-size-xl: #{$font-size-xl};
+  --font-size-lg: #{$font-size-lg};
+  --font-size-md: #{$font-size-md};
+  --font-size-sm: #{$font-size-sm};
+  --font-size-xs: #{$font-size-xs};
+
+  // Line Heights
+  --line-height-xl: #{$line-height-xl};
+  --line-height-lg: #{$line-height-lg};
+  --line-height-md: #{$line-height-md};
+  --line-height-sm: #{$line-height-sm};
+  --line-height-xs: #{$line-height-xs};
+
+  // Default font settings
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

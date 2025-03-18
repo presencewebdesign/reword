@@ -1,0 +1,68 @@
+:root {
+  --header-background-colour: var(--cyan-10);
+  --header-colour: var(--warm-gray-100);
+}
+
+.wrapper {
+  z-index: var(--z-page-header);
+  margin: var(--gutter-sm);
+  padding: var(--gutter-sm) 0;
+  background-color: var(--header-background-colour);
+  position: relative;
+  border-radius: var(--border-radius-sm);
+
+  .settings {
+    --button-color: var(--header-colour);
+    --button-color--hover: var(--header-colour);
+    --button-color--disabled: var(--header-colour);
+    --button-color--active: var(--header-colour);
+    position: absolute;
+    top: var(--gutter-xs);
+    right: var(--gutter-xs);
+    z-index: 1;
+  }
+
+  .title {
+    margin: 0;
+    padding: 0;
+    color: var(--header-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-indent: -9999px; /* Hides the text visually */
+
+    .logo {
+      max-width: 300px;
+      height: auto;
+      text-indent: 0; /* Reset text-indent for the image */
+    }
+  }
+
+  .subtitle {
+    color: var(--header-colour);
+    text-align: center;
+  }
+
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .title {
+      .logo {
+        content: url('/images/reword.png'); /* Change logo source for mobile */
+        max-width: 100%;
+        max-width: 100px;
+        width: auto;
+        height: auto;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin: var(--gutter-xs);
+    padding: var(--gutter-xs) 0;
+
+    .subtitle {
+      font-size: 0.875rem; /* Smaller font size on very small screens */
+    }
+  }
+}

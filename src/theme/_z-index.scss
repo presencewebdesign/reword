@@ -1,0 +1,9 @@
+$z-modal: 1000;
+$z-page-header: 10;
+$z-main: 1;
+
+:root {
+  --z-modal: #{$z-modal};
+  --z-page-header: #{$z-page-header};
+  --z-main: #{$z-main};
+}

@@ -1,0 +1,22 @@
+:root {
+  --select-background-colour: var(--warm-gray-100);
+  --select-background-colour--hover: var(--warm-gray-80);
+}
+
+.wrapper {
+  width: 100%;
+  padding: var(--gutter-xs);
+  font-size: var(--font-size-sm);
+  border-radius: var(--border-radius-sm);
+  border: var(--border-width-sm) solid var(--warm-gray-10);
+  background-color: var(--select-background-colour);
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--warm-gray-80);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

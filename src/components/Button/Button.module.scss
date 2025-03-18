@@ -1,0 +1,77 @@
+:root {
+  --button-color: var(--cyan-10);
+  --button-color--hover: var(--warm-gray-10);
+  --button-color--disabled: var(--dusty-white);
+
+  --button-background-color: var(--blue-60);
+  --button-background-color--hover: var(--blue-50);
+  --button-background-color--disabled: var(--blue-whale);
+
+  --button-border-color: transparent;
+  --button-border-color--hover: var(--medium-slate-blue);
+  --button-border-color--disabled: var(--blue-whale);
+  --button-border-color--active: var(--blue-60);
+
+  --button-border-radius: var(--border-radius-md);
+  --button-border-width: var(--border-width-sm);
+  --button-padding: var(--gutter-xs) var(--gutter-sm);
+
+  --button-font-size: var(--font-size-sm);
+  --button-font-weight: var(--font-weight-normal);
+  --button-font-family: inherit;
+
+  --button-cursor: pointer;
+}
+
+.button {
+  border-radius: var(--button-border-radius);
+  color: var(--button-color);
+  border-color: var(--button-border-color);
+  border-width: var(--button-border-width);
+  padding: var(--button-padding);
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  font-family: var(--button-font-family);
+  background-color: var(--button-background-color);
+  cursor: var(--button-cursor);
+  transition: border-color 0.25s;
+  margin-bottom: var(--gutter-sm);
+
+  &:hover,
+  &:focus {
+    border-color: var(--button-border-color--hover);
+    color: var(--button-color--hover);
+    background-color: var(--button-background-color--hover);
+  }
+
+  &:disabled {
+    border-color: var(--button-border-color--disabled);
+    color: var(--button-color--disabled);
+    background-color: var(--button-background-color--disabled);
+  }
+
+  &:active,
+  &:focus {
+    border-color: var(--button-border-color--active);
+  }
+}
+
+.hideBackground {
+  --button-color: var(--warm-grey-80);
+  --button-color--hover: var(--warm-grey-80);
+  --button-color--active: var(--warm-grey-80);
+  --button-background-color: transparent;
+  --button-background-color--hover: transparent;
+  --button-border-color--hover: transparent;
+  --button-border-color--active: transparent;
+  --button-font-size: var(--font-size-md);
+  --button-padding: 0;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--button-color);
+}

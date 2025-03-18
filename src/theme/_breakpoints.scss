@@ -1,0 +1,13 @@
+$mobile-sm: 320px;
+$mobile-lg: 480px;
+$tablet: 768px;
+$desktop-sm: 1024px;
+$desktop-lg: 1200px;
+
+:root {
+  --mobile-sm: #{$mobile-sm};
+  --mobile-lg: #{$mobile-lg};
+  --tablet: #{$tablet};
+  --desktop-sm: #{$desktop-sm};
+  --desktop-lg: #{$desktop-lg};
+}

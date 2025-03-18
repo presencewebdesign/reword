@@ -1,0 +1,39 @@
+@import '../../theme';
+
+.wrapper {
+  width: 100%;
+  max-width: var(--max-width);
+
+  .response {
+    margin: var(--gutter-lg);
+  }
+
+  .responseBox {
+    border: var(--border-width-sm) solid var(--warm-gray-30);
+    border-radius: var(--border-radius-sm);
+    padding: var(--gutter-sm);
+    margin: var(--gutter-sm);
+    position: relative;
+    overflow: hidden;
+
+    .responseText {
+      width: 100%;
+      min-height: 200px;
+      border: none;
+      resize: none;
+      font-size: var(--font-size-sm);
+      line-height: var(--line-height-lg);
+      font-family: 'Arial', sans-serif;
+    }
+
+    .buttonContainer {
+      position: absolute;
+      top: var(--gutter-xs);
+      right: var(--gutter-xs);
+      @include flex-with-align(center, center, row);
+      button {
+        margin: 0 var(--gutter-xs);
+      }
+    }
+  }
+}

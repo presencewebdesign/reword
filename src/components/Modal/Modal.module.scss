@@ -1,0 +1,30 @@
+@import '../../theme';
+
+:root {
+  --modal-overlay-background-color: var(--black-overlay);
+}
+
+.wrapper {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--modal-overlay-background-color);
+
+  @include flex-with-align(center, center, column);
+}
+
+.contentWrapper {
+  position: relative;
+  .close {
+    position: absolute;
+    top: var(--gutter-xs);
+    right: var(--gutter-xs);
+  }
+}
+
+.hide {
+  @include hidden;
+}

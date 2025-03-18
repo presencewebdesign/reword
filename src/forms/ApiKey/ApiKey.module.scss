@@ -1,0 +1,18 @@
+@import '../../theme';
+
+.form {
+  background-color: var(--background-color);
+  padding: var(--gutter-md);
+  border-radius: var(--border-radius-md);
+  @include flex-with-align(center, center, column);
+
+  .title {
+    margin: 0;
+  }
+
+  .input {
+    width: 100%;
+    margin: var(--gutter-sm) 0;
+    padding: var(--gutter-xs);
+  }
+}

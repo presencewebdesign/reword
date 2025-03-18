@@ -1,0 +1,37 @@
+@import '../../theme/';
+
+.buttonContainer {
+  margin: var(--gutter-sm) 0;
+
+  button {
+    margin: 0 var(--gutter-xs);
+  }
+}
+
+.dropdownContainer {
+  margin-bottom: var(--gutter-sm);
+
+  select {
+    &:hover {
+      background-color: var(--pure-white);
+    }
+  }
+}
+
+.wrapper {
+  @include col();
+
+  margin: 0 var(--gutter-sm);
+  padding: 0 var(--gutter-md);
+
+  @media (max-width: 768px) {
+    margin: 0 var(--gutter-xs);
+    padding: 0 var(--gutter-xs);
+  }
+
+  .textarea {
+    margin: var(--gutter-xs) 0;
+    height: var(--gutter-lg);
+    font-family: var(--font-family-main);
+  }
+}

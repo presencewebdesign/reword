@@ -1,0 +1,61 @@
+$black: #000000;
+$black-overlay: rgba(0, 0, 0, 0.2);
+
+$nero-dark: #1a1a1a;
+$nero: #242424;
+
+$blue-whale: #213547;
+$medium-slate-blue: #646cff;
+$neon-blue: #535bf2;
+
+$white-smoke: #f9f9f9;
+$murky-white: rgba(255, 255, 255, 0.871);
+$pure-white: #ffffff;
+
+// From IBM Carbon Design System
+$warm-gray-10: #f7f3f2;
+$warm-gray-20: #e5e0df;
+$warm-gray-30: #cac5c4;
+$warm-gray-80: #3c3838;
+$warm-gray-100: #171414;
+$cyan-10: #e5f6ff;
+$blue-50: #4589ff;
+$blue-60: #0f62fe;
+$red-50: #fa4d56;
+
+:root {
+  --black: #{$black};
+  --black-overlay: #{$black-overlay};
+  --nero-dark: #{$nero-dark};
+  --nero: #{$nero};
+  --blue-whale: #{$blue-whale};
+  --medium-slate-blue: #{$medium-slate-blue};
+  --neon-blue: #{$neon-blue};
+  --white-smoke: #{$white-smoke};
+  --murky-white: #{$murky-white};
+  --pure-white: #{$pure-white};
+
+  // From IBM Carbon Design System
+  --warm-gray-10: #{$warm-gray-10};
+  --warm-gray-20: #{$warm-gray-20};
+  --warm-gray-30: #{$warm-gray-30};
+  --warm-gray-80: #{$warm-gray-80};
+  --warm-gray-100: #{$warm-gray-100};
+  --cyan-10: #{$cyan-10};
+  --blue-50: #{$blue-50};
+  --blue-60: #{$blue-60};
+  --red-50: #{$red-50};
+
+  --background-color-light-mode: var(--pure-white);
+  --color-light-mode: var(--blue-whale);
+  --heading-color-light-mode: var(--pure-white);
+
+  --background-color: var(--nero);
+  --color: var(--murky-white);
+  --heading-color: var(--pure-white);
+
+  --text-link-color: var(--medium-slate-blue);
+  --text-link-color--hover: var(--medium-slate-blue);
+
+  --text-error-color: var(--red-50);
+}

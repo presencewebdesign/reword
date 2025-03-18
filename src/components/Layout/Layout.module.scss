@@ -1,0 +1,9 @@
+@import '../../theme';
+
+.wrapper {
+  text-align: center;
+
+  main {
+    @include flex-with-align(center, center);
+  }
+}

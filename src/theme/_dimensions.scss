@@ -1,0 +1,19 @@
+$max-width: 1024px;
+
+$gutter-main: 3.2rem;
+
+$gutter-xs: calc($gutter-main / 4);
+$gutter-sm: calc($gutter-main / 2);
+$gutter-md: $gutter-main;
+$gutter-lg: calc($gutter-main * 2);
+$gutter-xl: calc($gutter-main * 4);
+
+:root {
+  --max-width: #{$max-width};
+
+  --gutter-xs: #{$gutter-xs};
+  --gutter-sm: #{$gutter-sm};
+  --gutter-md: #{$gutter-md};
+  --gutter-lg: #{$gutter-lg};
+  --gutter-xl: #{$gutter-xl};
+}
