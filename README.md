@@ -70,6 +70,7 @@ We refactored our system prompt and added some custom data from the UI to includ
 
 ## Tech Stack
 
+- VITE
 - ReactJS
 - TypeScript
 - Docker
