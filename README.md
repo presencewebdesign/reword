@@ -92,11 +92,6 @@ These improvements will contribute to a more robust and accessible application, 
 
 ## Installation
 
-1. Clone the repository:
-
-```bash
-git clone https://github.ibm.com/James-Stevenson-CIC/reword.git
-```
 
 1. Navigate to the project directory:
 
@@ -104,7 +99,7 @@ git clone https://github.ibm.com/James-Stevenson-CIC/reword.git
 cd reword
 ```
 
-1. Install dependencies:
+2. Install dependencies:
 
 ```bash
 npm install
